@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="Assets/profile.jpg" />
+</head>
+
+<html lang="en">
+    <!-- Header -->
+    <header>
+        <h1>Portfolio</h1>
+        <h4>Conley Becker</h4>
+    </header>
+
+    <!-- Picture -->
+    <a href="LICENSE"></a><img id="profile" src="Assets/profile.jpg" alt="Conley Becker">
+
+    <h2><u>Awards</u></h2>
+    <p>Click each one to show more! Click on the icon to take you to the files.</p>
+
+    <div class="project_div">
+        <button id="button1">7th in Coding Competition - 8th grade</button>
+        <div class="project_content" id="content1">
+            <p class="project_text"> I placed 7th in a national coding competition against other middle schoolers through TSA (Technology Student Association). This consisted of a test about various different languages, and 3 prompts semifinalists had to solve.</p>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <h2><u>Coding Projects</u></h2>
+
+    <div class="project_div">
+        <button id="button2">2024-25 Robot - Freshmen Year</button>
+        <div class="project_content" id="content2">
+            <p class="project_text"> Last year I worked on the 2024-2025 Robot, mainly on subsystems. I also learned how to create autos.</p>
+            <a href="https://github.com/FRC-Team-1710/2025-Robot" target="_blank"><img src="Assets/GitHub.png" class="link"></a>
+        </div>
+    </div>
+    <br>
+
+    <div class="project_div">
+        <button id="button3">Software Development - Freshmen Year</button>
+        <div class="project_content" id="content3">
+            <p class="project_text"> I created a pollution data app where you enter a location and it gets results for that location</p>
+            <a href="https://github.com/ConleyTobias/Software-Development" target="_blank"><img src="Assets/GitHub.png" class="link"></a>
+        </div>
+    </div>
+    <br>
+
+    <div class="project_div">
+        <button id="button4">Raspberry Pi</button>
+        <div class="project_content" id="content4">
+            <p class="project_text"> I program LCD displays and motors on my Raspberry Pi.</p>
+        </div>
+    </div>
+    <br>
+
+    <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+    <footer id="credits">
+        <a href="https://github.com/ConleyTobias/Portfolio" target="_blank"><img src="Assets/GitHub.png" alt="Github Link"></a>
+        <br>
+        <p>Code & License can be found at the GitHub link above <br><br>
+            MIT License
+
+            Copyright (c) 2025 Conley Becker
+
+            Permission is hereby granted, free of charge, to any person obtaining a copy
+            of this software and associated documentation files (the "Software"), to deal
+            in the Software without restriction, including without limitation the rights
+            to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+            copies of the Software, and to permit persons to whom the Software is
+            furnished to do so, subject to the following conditions:
+
+            The above copyright notice and this permission notice shall be included in all
+            copies or substantial portions of the Software.
+
+            THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+            IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+            FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+            AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+            LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+            OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+            SOFTWARE.
+        </p>
+    </footer>
+</html>
+
+<style>
+    body {background-image: linear-gradient(to bottom, rgb(84, 114, 207), rgb(11, 23, 119));}
+    h1 {font-weight: bold; outline-style: dashed; outline-offset: 10px; border-radius: 1px;}
+    h1, h2, h3, h4, h5, p {color: white; font-family: 'Courier New', Courier, monospace; filter: drop-shadow(1px 1px 2px black);}
+    img {height: 300px;}
+    button {border-style: none; font-family: sans-serif; padding: 10px 10px; border-radius: 10px; background-color: gray; color: white; cursor: pointer;}
+
+    #credits {background-color: black;}
+    .project_content {display: none; filter: drop-shadow(1px 1px 2px black);}
+    .project_div {border-radius: 10px; color: gray; background-color: gray;}
+    .project_text {padding: 10px}
+    .link {height: 100px}
+</style>
+
+<script>
+    const max = 5
+    let i = 1
+    while (i < max + 1) {
+        const text = document.getElementById('content'+i);
+        const button = document.getElementById('button'+i);
+        button.addEventListener('click', function() {
+            if (text.style.display === 'none') {
+                text.style.display = 'inline';
+            } else {
+                text.style.display = 'none';
+            }
+        });
+        i++;
+    }
+</script>
