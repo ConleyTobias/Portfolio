@@ -1,0 +1,82 @@
+head {
+    background: #43454a;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #43454a;
+    padding: 10px;
+}
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #212121;
+}
+
+.nav-links a {
+    color: #80cbc4;
+    text-decoration: none;
+}
+
+/*TODO: add fonts and separate webpages*/
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background: rgb(33, 33, 33)
+}
+
+/*h1 {*/
+/*    font-weight: bold;*/
+/*    outline-style: dashed;*/
+/*    outline-offset: 10px;*/
+/*    border-radius: 1px;*/
+/*}*/
+
+h1, h2, h3, h4, h5, p {
+    color: #80cbc4;
+    font-family: 'Courier New', Courier, monospace;
+    filter: drop-shadow(1px 1px 2px black);
+}
+
+img {
+    height: 300px;
+    border-radius: 25px;
+}
+
+button {
+    border-style: none;
+    font-family: sans-serif;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #43454a;
+    color: #80cbc4;
+    cursor: pointer;
+}
+
+#credits {
+    background-color: black;
+}
+
+.project_content {
+    display: none; filter: drop-shadow(1px 1px 2px black);
+}
+
+.project_div {
+    border-radius: 10px; color: #43454a; background-color: #43454a;
+}
+
+.project_text {
+    padding: 10px
+}
+
+.link {
+    height: 100px
+}

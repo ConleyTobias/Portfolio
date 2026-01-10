@@ -3,18 +3,26 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="icon" href="Assets/profile.jpg" />
+    <link rel="icon" href="../../assets/images/profile.jpg" />
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <html lang="en">
     <!-- Header -->
     <header>
-        <h1>Portfolio</h1>
-        <h4>Conley Becker</h4>
+        <nav class="navbar">
+            <h1>Conley Becker</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="coding_projects.html">Coding Projects</a></li>
+                <li><a href="cad_projects.html">CAD Projects</a></li>
+            </ul>
+        </nav>
+        <h4>My Portfolio</h4>
     </header>
 
     <!-- Picture -->
-    <a href="LICENSE"></a><img id="profile" src="Assets/profile.jpg" alt="Conley Becker">
+    <a href="../../LICENSE"></a><img id="profile" src="../../assets/images/profile.jpg" alt="Conley Becker">
 
 
     <!-- Projects -->
@@ -25,7 +33,7 @@
         <button id="button1">2024-25 Robot - Freshmen Year</button>
         <div class="project_content" id="content1">
             <p class="project_text"> Last year I worked on the 2024-2025 Robot, mainly on subsystems. I also learned how to create autos.</p>
-            <a href="https://github.com/FRC-Team-1710/2025-Robot" target="_blank"><img src="Assets/GitHub.png" class="link" alt="GitHub"></a>
+            <a href="https://github.com/FRC-Team-1710/2025-Robot" target="_blank"><img src="../../assets/images/GitHub.png" class="link" alt="GitHub"></a>
         </div>
     </div>
     <br>
@@ -34,7 +42,7 @@
         <button id="button2">Software Development - Freshmen Year</button>
         <div class="project_content" id="content2">
             <p class="project_text"> I created a pollution data app where you enter a location and it gets results for that location</p>
-            <a href="https://github.com/ConleyTobias/Software-Development" target="_blank"><img src="Assets/GitHub.png" class="link" alt="GitHub"></a>
+            <a href="https://github.com/ConleyTobias/Software-Development" target="_blank"><img src="../../assets/images/GitHub.png" class="link" alt="GitHub"></a>
         </div>
     </div>
     <br>
@@ -144,7 +152,7 @@
 
     <br><br><br><br><br>
     <footer id="credits">
-        <a href="https://github.com/ConleyTobias/Portfolio" target="_blank"><img src="Assets/GitHub.png" alt="Github Link"></a>
+        <a href="https://github.com/ConleyTobias/Portfolio" target="_blank"><img src="../../assets/images/GitHub.png" alt="Github Link"></a>
         <br>
         <p>Code & License can be found at the GitHub link above <br><br>
             MIT License
@@ -170,35 +178,6 @@
             SOFTWARE.
         </p>
     </footer>
+
+    <script src="../UI.js"> </script>
 </html>
-
-<style>
-    body {background-image: linear-gradient(to bottom, rgb(84, 114, 207), rgb(11, 23, 119));}
-    h1 {font-weight: bold; outline-style: dashed; outline-offset: 10px; border-radius: 1px;}
-    h1, h2, h3, h4, h5, p {color: white; font-family: 'Courier New', Courier, monospace; filter: drop-shadow(1px 1px 2px black);}
-    img {height: 300px;}
-    button {border-style: none; font-family: sans-serif; padding: 10px 10px; border-radius: 10px; background-color: gray; color: white; cursor: pointer;}
-
-    #credits {background-color: black;}
-    .project_content {display: none; filter: drop-shadow(1px 1px 2px black);}
-    .project_div {border-radius: 10px; color: gray; background-color: gray;}
-    .project_text {padding: 10px}
-    .link {height: 100px}
-</style>
-
-<script>
-    const max = 11
-    let i = 1
-    while (i < max + 1) {
-        const text = document.getElementById('content'+i);
-        const button = document.getElementById('button'+i);
-        button.addEventListener('click', function() {
-            if (text.style.display === 'none') {
-                text.style.display = 'inline';
-            } else {
-                text.style.display = 'none';
-            }
-        });
-        i++;
-    }
-</script>
