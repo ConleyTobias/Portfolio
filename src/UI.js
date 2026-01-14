@@ -1,4 +1,4 @@
-const max = 11
+const max = 11;
 let i = 1;
 
 const data = [
