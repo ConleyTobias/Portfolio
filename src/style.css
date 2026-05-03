@@ -1,19 +1,22 @@
 head {
     background: #43454a;
+    justify-items: center;
 }
 
 .navbar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     background-color: #43454a;
     padding: 10px;
     border-radius: 10px;
+    flex-wrap: nowrap;
 }
 
 .nav-links li {
     list-style: none;
     display: inline-block;
-    margin: 0 10px;
+    margin: 5px 10px;
     padding: 15px;
     border-radius: 10px;
     background: #212121;
@@ -30,18 +33,20 @@ head {
     color: #fff;
 }
 
-body {
-    background: rgb(33, 33, 33)
+body, footer {
+    background: rgb(33, 33, 33);
+    justify-items: center;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-/*h1 {*/
-/*    font-weight: bold;*/
-/*    outline-style: dashed;*/
-/*    outline-offset: 10px;*/
-/*    border-radius: 1px;*/
-/*}*/
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-h1, h2, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p, body, a {
     color: #80cbc4;
     font-family: 'Courier New', Courier, monospace;
     filter: drop-shadow(1px 1px 2px black);
@@ -49,21 +54,35 @@ h1, h2, h3, h4, h5, p {
 
 img {
     height: 300px;
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 button {
+    font-size: 20px;
     border-style: none;
     font-family: sans-serif;
     padding: 10px 10px;
     border-radius: 10px;
-    background-color: #43454a;
+    background-color: #212121;
     color: #80cbc4;
     cursor: pointer;
+    margin: 10px;
 }
 
 button:hover {
     color: #fff;
+}
+
+#body-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #43454a;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 50px;
+    width: calc(100% - 100px);
 }
 
 #credits {
@@ -87,5 +106,13 @@ button:hover {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #43454a;
+    padding: 50px;
     border-radius: 10px;
+    margin: 50px;
+    width: calc(100% - 100px);
 }
